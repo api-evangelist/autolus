@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of /.well-known/ on autolus.com
+host: https://www.autolus.com
+documents:
+- path: /.well-known/security.txt          # RFC 9116
+  status: 200
+  file: autolus-security.txt
+- path: /.well-known/openid-configuration   # OIDC discovery
+  status: 404
+- path: /.well-known/oauth-authorization-server  # RFC 8414
+  status: 404
+- path: /.well-known/api-catalog             # RFC 9727
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Corporate marketing site (Cloudflare/bot protection returns 403 to
+  automated clients on most paths). Only a minimal RFC 9116 security.txt is
+  published; its Contact is a hosting/branding agency address
+  (hostingalerts@sampsonmay.com), not a developer/security team. No developer
+  portal, API documentation, or OpenAPI surface was found.

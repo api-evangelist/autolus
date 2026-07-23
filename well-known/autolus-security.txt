@@ -1,0 +1,4 @@
+Canonical: /.well-known/security.txt
+Contact: mailto:hostingalerts@sampsonmay.com
+Expires: 2030-01-12T01:01:00Z
+Preferred-Languages: en

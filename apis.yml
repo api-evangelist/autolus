@@ -1,8 +1,26 @@
 aid: autolus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/autolus.png
 name: Autolus *
-description: 'Autolus * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Autolus is a life-sciences (biopharmaceutical) company operating in the cell-therapy
+  space, developing programmed / engineered T cell (CAR-T) therapies for cancer and
+  other serious diseases. It was surfaced as a portfolio company of GV and added to the
+  API Evangelist network for enrichment. As a clinical/commercial-stage biopharma, its
+  public web presence (autolus.com) is a corporate marketing and investor-relations site
+  rather than a developer platform: no public API, developer portal, API documentation,
+  or OpenAPI surface was found during enrichment. The only machine-discoverable artifact
+  is a minimal RFC 9116 security.txt.
 url: https://raw.githubusercontent.com/api-evangelist/autolus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Biopharmaceutical
+- Biotechnology
+- Cell Therapy
+- Immunotherapy
+- Oncology
+- CAR-T
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/autolus-domain-security.yml
+- type: WellKnown
+  url: well-known/autolus-well-known.yml
+- type: SecurityTxt
+  url: well-known/autolus-security.txt
 - type: Website
-  url: http://autolus.com
+  url: https://www.autolus.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
