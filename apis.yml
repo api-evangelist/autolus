@@ -22,7 +22,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/autolus.png
-name: Autolus *
+name: Autolus
 description: >-
   Autolus is a life-sciences (biopharmaceutical) company operating in the cell-therapy
   space, developing programmed / engineered T cell (CAR-T) therapies for cancer and
@@ -50,7 +50,7 @@ tags:
 - Cell Therapy
 - Immunotherapy
 - Oncology
-- Cart
+- CAR-T
 tags_raw:
 - Company
 - Life Sciences
@@ -80,3 +80,5 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-tags-removed:
+- Cart
